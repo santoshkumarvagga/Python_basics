@@ -1,0 +1,6 @@
+step 1: create a github repository.
+step 2: create a virtual env and activate it.(python3 -m venv ENV_NAME and source ENV_NAME/bin/activate)
+step 3: clone the repoository. (first confirm whether git is initialised or not, if yes: git clone URL)
+step 4: install necessary modules for the project. (pip install django,flask,pytest,etc)
+step 5: store all needed modules into a reqirements.txt file (pip freeze > requirements.txt)
+
