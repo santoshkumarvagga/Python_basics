@@ -1,0 +1,14 @@
+Lists - Mutable. Once declared, can add/delete/modify elements from Lists. i,e. Dynamic in nature.
+Tuples - Immutable. Once declared, no further adding/deleting/modifying elements from tuple. i,e. Static in nature
+
+Lists - Consume more memory
+Tuples - Consume less memory
+
+Lists - have many built-in methods to be called on lists like len(), append(), insert(), extend(),sum(), count(), index(), min(), max(), reverse(), pop(), del(), remove(), etc
+Tuples - have only 2 built-in methods to be called on tuples - index() and count()
+
+Lists - better for performing operations like insertions/deletions.
+Tuples - better for operations like accessing thee elements.
+
+Lists - elements are enclosed in []
+Tuples - elements are enclosed in ()
