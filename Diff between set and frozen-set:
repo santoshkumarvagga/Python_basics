@@ -1,0 +1,8 @@
+Set : elements dont repeat, unordered and enclosed in {} and mutable.
+Frozen set: Immutable version of set. i,e. elements dont repeat, unordered and enclosed in () and immutable.
+
+Set: created using set() from any iterables.
+Frozenset: created using frozenset() from any iterables.
+
+Frozen set on dictionaries will return only its keys included in resulting frozen set.
+
