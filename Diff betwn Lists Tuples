@@ -1,7 +1,7 @@
 Lists - Mutable. Once declared, can add/delete/modify elements from Lists. i,e. Dynamic in nature.
 Tuples - Immutable. Once declared, no further adding/deleting/modifying elements from tuple. i,e. Static in nature
 
-Lists - Consume more memory
+Lists - Consume more memory, hence accessiblility is slower comapered to lists.
 Tuples - Consume less memory
 
 Lists - have many built-in methods to be called on lists like len(), append(), insert(), extend(),sum(), count(), index(), min(), max(), reverse(), pop(), del(), remove(), etc
@@ -12,3 +12,13 @@ Tuples - better for operations like accessing thee elements.
 
 Lists - elements are enclosed in []
 Tuples - elements are enclosed in ()
+
+Lists - will create new list when copied using list() i,e. Lists can be copied
+Tuple - wont create a new copy when co=opied using tuple() i,e. Tuples cannot be copied
+
+Lists - Cannot be used as Key in Dictionary since Key should be Mutable.
+Tuple: Can be used as Key in Dictionary, since it is Immutable.
+
+https://stackabuse.com/lists-vs-tuples-in-python/
+
+
