@@ -14,7 +14,7 @@ Lists - elements are enclosed in []
 Tuples - elements are enclosed in ()
 
 Lists - will create new list when copied using list() i,e. Lists can be copied
-Tuple - wont create a new copy when co=opied using tuple() i,e. Tuples cannot be copied
+Tuple - wont create a new copy when co=opied using tuple() i,e. Tuples cannot be copied, but resued.
 
 Lists - Cannot be used as Key in Dictionary since Lists vcan be modified at any point of time..
 Tuple: Can be used as Key in Dictionary, since tuples cannot be modifie.   Dictionary Keys should be Immutable.
