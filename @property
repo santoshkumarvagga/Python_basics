@@ -1,0 +1,61 @@
+class C():
+    '''Illustrating setter and getter method for non-private, non-protected variable'''
+    '''using property for normal variables gives max recursion depth reached error'''
+    def __init__(self):
+        self.c = 20
+
+    def cgetter(self):
+        return self.c
+    
+    def csetter(self, val):
+        self.c = val
+
+class A():
+    '''Only private and protected variables can be utilised for @property'''
+    def __init__(self):
+        '''Illustrating for proetcted variable'''
+        self._temp = 0 
+
+    @property
+    def temp(self):
+        return self._temp
+    @temp.setter
+    def temp(self, val):
+        self._temp = val
+
+class B():
+    '''Only private and protected variables can be utilised for @property'''
+    def __init__(self):
+        '''Illustrating for private variable'''
+        self.__tempo = 0
+
+    @property
+    def tempo(self):
+        return self.__tempo
+
+    @tempo.setter
+    def tempo(self, value):
+        self.__tempo = value
+
+'''following lines gives REcursionError'''
+#x = C()
+#print(x.c)
+#x.c = 89
+#print(x.c)
+
+    
+y = C()
+print(y.cgetter())
+y.csetter(45)
+print(y.c)
+
+  
+a = A()
+print(a.temp) #getter method called implicitly
+a.temp = 10 #setter method called implicitly
+print(a.temp)
+        
+b = B()
+print(b.tempo) #getter method called implicilty
+b.tempo = 20  #setter method called implicitly
+print(b.tempo)
