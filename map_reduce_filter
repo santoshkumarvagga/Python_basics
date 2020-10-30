@@ -1,0 +1,20 @@
+Map - Takes each element of an iterable(s) and sends as an argument to the function.
+      Returns a list of returned values.
+      Syntax: map(func,seq)
+      
+reduce- Available under package "functools"
+        Takes an iterable as an argument for a function, which is an argument for reduce.
+        The function takes first two values of a iterable & calculate result. It will consider next immmedieate succeding element in iterable & the so far calculated result for
+        the next iteration.Likewise,  it will cover all the elements in the iterable. It will return final output.
+        Syntax: reduce(func(seq))
+        
+filter - Takes each element of an iterable & sends it as an argument to a function & if it evaluates to be true, appends to list which it gives as output, else dont append.
+        [Note: if no function is specified in filter, then 'None' will be replaced in place of a function & acts as Identity function(returns boolean based on argument like
+        0 , False -> False
+        1, True, Non-zero -> True]
+        Syntax: filter(func, seq)
+        
+Take aways:
+1) If we are interested in all values of an iterable to be passes to a function and get results , -> map()
+2) If we are interested that only few things which are happening to be True after passing by a function(condition), -> filter()
+3) If we are interested in final result of an iterable that considers all elements of an iterable, -> reduce()
